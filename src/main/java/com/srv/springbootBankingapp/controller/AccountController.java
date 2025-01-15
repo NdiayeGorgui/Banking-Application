@@ -61,7 +61,8 @@ public class AccountController {
 	
 	
 	// Get All Account Rest API
-	@GetMapping
+	// @GetMapping(produces = {"application/json","application/xml"})
+	 @GetMapping
 	public ResponseEntity<List<AccountDto>> getAllAccounts(){
 		
 		List<AccountDto> accountsDto=accountService.getAllAccounts();
